@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giao diện người dùng ứng dụng M-Hike</title>
+</head>
+<body>
+
+<header>
+    <h1>M-Hike</h1>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Đăng nhập</a>
+        <a href="#">Đăng ký</a>
+    </nav>
+</header>
+
+<main>
+    <section id="trang-chu">
+        <h2>Trang chủ</h2>
+        <p>Trang chủ hiển thị các thông tin cơ bản về ứng dụng, bao gồm:
+        <ul>
+            <li>Tên ứng dụng</li>
+            <li>Logo ứng dụng</li>
+            <li>Slogan ứng dụng</li>
+            <li>Nút đăng nhập hoặc đăng ký</li>
+        </ul>
+        </p>
+    </section>
+
+    <section id="trang-dang-nhap">
+        <h2>Trang đăng nhập</h2>
+        <form action="/dang-nhap" method="post">
+            <input type="text" name="tai-khoan" placeholder="Tài khoản">
+            <input type="password" name="mat-khau" placeholder="Mật khẩu">
+            <input type="submit" value="Đăng nhập">
+        </form>
+    </section>
+
+    <section id="trang-dang-ky">
+        <h2>Trang đăng ký</h2>
+        <form action="/dang-ky" method="post">
+            <input type="text" name="ten" placeholder="Tên">
+            <input type="file" name="anh-dai-dien">
+            <input type="text" name="gioi-tinh" placeholder="Giới tính">
+            <input type="date" name="ngay-sinh">
+            <input type="email" name="email" placeholder="Email">
+            <input type="tel" name="so-dien-thoai" placeholder="Số điện thoại">
+            <input type="password" name="mat-khau" placeholder="Mật khẩu">
+            <input type="submit" value="Đăng ký">
+        </form>
+    </section>
+
+    <section id="trang-ho-so">
+        <h2>Trang hồ sơ</h2>
+        <div class="thong-tin-ca-nhan">
+            <p>Tên: <span id="ten"></span></p>
+            <p>Ảnh đại diện: <img id="anh-dai-dien" src=""></p>
+            <p>Giới tính: <span id="gioi-tinh"></span></p>
+            <p>Ngày sinh: <span id="ngay-sinh"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Số điện thoại: <span id="so-dien-thoai"></span></p>
+        </div>
+    </section>
+
+    <section id="trang-danh-sach-tuyen">
+        <h2>Trang danh sách tuyến</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Tên tuyến</th>
+                <th>Chiều dài</th>
+                <th>Thời gian ước tính</th>
+                <th>Điểm bắt đầu</th>
+                <th>Điểm kết thúc</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tuyến 1</td>
+                <td>10 km</td>
+                <td>2 giờ</td>
+                <td>Công viên Tao Đàn</td>
+                <td>Công viên 30/4</td>
+            </tr>
+            <tr>
+                <td>Tuyến 2</td>
+                <td>15 km</td>
+                <td>3 giờ</td>
+                <td>Bến xe Miền Đông</td>
+                <td>
